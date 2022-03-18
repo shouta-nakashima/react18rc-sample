@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Header,Container} from '../src/components'
+import { useState } from "react";
 
 function App() {
+  const [value,setValue] = useState('Content details')
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <main className="App-container" >
+        <Header value={value} setValue={setValue}/>
+        <Container value={value}/>
+      </main>
     </div>
   );
 }
