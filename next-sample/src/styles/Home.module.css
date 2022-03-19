@@ -1,6 +1,9 @@
 .container {
   padding: 0 2rem;
 }
+.image {
+  border-radius: 50%;
+}
 
 .main {
   min-height: 100vh;
@@ -106,6 +109,15 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.link {
+  color: #61dafb;
+  cursor: pointer;
+}
+
+.link:hover {
+  color: #0070f3;
 }
 
 @media (max-width: 600px) {
