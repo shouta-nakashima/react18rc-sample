@@ -1,8 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Link from 'next/link'
 import styles from '../src/styles/Home.module.css'
-import {Footer} from '../src/components'
+import {Footer,LinkCard} from '../src/components'
 
 const Home: NextPage = () => {
   return (
@@ -22,16 +21,8 @@ const Home: NextPage = () => {
           Get started by editing{' '}
           <code className={styles.code}>pages/index.tsx</code>
         </p>
-
         <div className={styles.grid}>
-
-          <Link href={'/'}>
-            <a>
-              <div style={{width:'300px',height:'60px',border:'1px solid gray',textAlign:'center',padding:'20px 0',borderRadius:'10px'}}>
-                <p style={{margin: 0}}>streamingHTML</p>
-              </div>
-            </a>
-          </Link>
+          <LinkCard text={'streamingHTML'} path={'/streaming-html'}/>
         </div>
       </main>
 
