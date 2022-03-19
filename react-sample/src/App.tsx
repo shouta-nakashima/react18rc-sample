@@ -8,7 +8,7 @@ function App() {
     <div className="App">
       <main className="App-container" >
         <Header value={value} setValue={setValue}/>
-        <Container value={value}/>
+        <Container value={value} setValue={setValue}/>
       </main>
     </div>
   );
