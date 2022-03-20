@@ -22,8 +22,6 @@ const TopContents:VFC<Props> = ({setValue}) => {
         <div style={{textAlign:'start',marginLeft:'135px'}}>
           <p className={'text'} onClick={() => setValue('Automatic Batching')}>Automatic Batching</p>
           <p className={'text'} onClick={() => setValue('Transition')}>Transition</p>
-          <p className={'text'} onClick={() => setValue('DeferredValue')}>DeferredValue</p>
-          <p className={'text'} onClick={() => setValue('Suspense')}>Suspense</p>
         </div>
       </div>
     </div>
