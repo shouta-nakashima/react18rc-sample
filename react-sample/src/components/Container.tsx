@@ -1,5 +1,5 @@
 import { Dispatch , FC , SetStateAction } from 'react';
-import {Transition,AutoBatch,TopContents} from './index'
+import {Transition,AutoBatch,TopContents,DeferredValue} from './index'
 
 type Props = {
   value:string
@@ -14,6 +14,7 @@ const Container:FC<Props> = (props) => {
       {value === 'Content details' ? <TopContents setValue={setValue}/> : undefined}
       {value === 'Automatic Batching' ? <AutoBatch/> : undefined}
       {value === 'Transition' ? <Transition/> : undefined}
+      {value === 'DeferredValue' ? <DeferredValue/> : undefined}
     </div>
   );
 };
