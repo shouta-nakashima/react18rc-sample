@@ -12,6 +12,7 @@ const Header:VFC<Props> = (props) => {
     {id:1,value:'Automatic Batching'},
     {id:2,value:'Transition'},
     {id:3,value:'DeferredValue'},
+    {id:4,value:'useId'},
   ]
   const handleChange = useCallback((text:string) => {
     setValue(text)
